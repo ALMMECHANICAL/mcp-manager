@@ -11,6 +11,8 @@ node_modules
 dist
 dist-electron
 dist-ssr
+dist-electron
+electron/dist/
 *.local
 
 # Editor directories and files
@@ -18,8 +20,16 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+**/.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Config files with sensitive data
+**/claude_desktop_config.json.bak
+**/claude_desktop_config.json
+
+# Build directories
+.tmp

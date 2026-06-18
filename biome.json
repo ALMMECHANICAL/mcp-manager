@@ -1,16 +1,26 @@
 {
 	"files": {
-		"ignore": ["dist/**/*", "node_modules/**/*", "public/**/*", "**/*.css"]
+		"ignore": [
+			"dist/**/*",
+			"node_modules/**/*",
+			"public/**/*",
+			"**/*.css",
+			".github/**/*"
+		]
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"recommended": true,
 			"suspicious": {
-				"noArrayIndexKey": "off"
+				"noArrayIndexKey": "off",
+				"noAssignInExpressions": "off"
+			},
+			"style": {
+				"noCommaOperator": "off"
 			}
 		},
-		"ignore": ["**/*.md", "**/*.css"]
+		"ignore": ["**/*.md", "**/*.css", ".github/**/*"]
 	},
 	"formatter": {
 		"enabled": true,
